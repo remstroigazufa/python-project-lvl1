@@ -6,7 +6,7 @@ import random
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, ', name,'!')
+    print('Hello, ', name, '!')
     print('What number is missing in the progression?')
     a = 1
     while a < 4:
@@ -17,15 +17,16 @@ def main():
         for n in str(g):
             str(n)+=g(i)
         print('Question: ',n)
-        b = prompt.integer('Your answer: ' )
+        b = prompt.integer('Your answer: ')
         if a < 4 and g == b:
             print('Correct!')
             a = a + 1
         else:
-            print(b,' is wrong answer ;(. Correct answer was ', g,'.\nLet\'s try again, ', name,"!")
+            print(b, 'is wrong answer ;(. Correct answer was ', g, '.')
+            print('Let\'s try again, ', name,"!")
             break
         if a == 4:
-            print('Congratulations, ',name,'!')
+            print('Congratulations, ', name, '!')
             break
 
 
