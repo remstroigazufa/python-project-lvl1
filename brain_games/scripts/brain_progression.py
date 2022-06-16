@@ -14,7 +14,7 @@ def main():
         y = random.randrange(30, 100, 1)
         x = random.randrange(1, 10, 1)
         g = list(range(i, y, x))
-        for n in str(g) :
+        for n in str(g):
             str(n)+=g(i)
         print('Question: ',n)
         b = prompt.integer('Your answer: ' )
