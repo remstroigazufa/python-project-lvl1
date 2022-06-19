@@ -14,7 +14,7 @@ def main():
         y = random.randrange(1, 100, 1)
         j = ['+', '-', '*']
         operation = random.choice(j)
-        print('Question: ', i, operation, y)
+        print('Question:', i, operation, y)
         b = prompt.integer('Your answer: ')
         g = eval(f'i {operation} y')
         if a < 4 and g == b:
