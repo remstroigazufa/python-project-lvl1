@@ -21,7 +21,7 @@ def main():
                 p += ' ' + '..'
             else:
                 p += ' ' + str(n)
-        print('Question:', p)
+        print('Question:'+ p)
         b = prompt.integer('Your answer:')
         if a < 4 and g[r] == b:
             print('Correct!')
