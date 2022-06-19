@@ -10,11 +10,12 @@ def main():
     print('What number is missing in the progression?')
     a = 1
     while a < 4:
-        i = random.randrange(1, 10, 1)
+        i = random.randrange(1, 5, 1)
         y = random.randrange(6, 10, 1)
-        x = random.randrange(1, 5, 1)
+        x = random.randrange(2, 5, 1)
         g = list(range(i, x * y, x))
         p = ' '
+#        print(i, y, x, len(g))
         r = random.randrange(0, len(g), 1)
         for n in g:
             if g[r] == n:
