@@ -29,10 +29,10 @@ def main():
             a = a + 1
         else:
             print(b, 'is wrong answer ;(. Correct answer was ', g[r], '.')
-            print('Let\'s try again, ', name + "!")
+            print('Let\'s try again,', name + "!")
             break
         if a == 4:
-            print('Congratulations, ', name + '!')
+            print('Congratulations,', name + '!')
             break
 
 if __name__ == '__main__':
