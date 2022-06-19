@@ -23,7 +23,7 @@ def main_three():
             a = a + 1
         else:
             print(f'\'{b}\' is wrong answer ;(. Correct answer was\'{cor}\'')
-            print('Let\'s try again, {name}!')
+            print(f'Let\'s try again, {name}!')
             break
         if a == 4:
             print('Congratulations,', name + '!')
