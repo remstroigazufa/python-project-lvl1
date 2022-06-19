@@ -11,16 +11,16 @@ def main():
     a = 1
     while a < 4:
         i = random.randrange(1, 10, 1)
-        y = random.randrange(5, 10, 1)
-        x = random.randrange(1, 10, 1)
+        y = random.randrange(6, 10, 1)
+        x = random.randrange(1, 5, 1)
         g = list(range(i, x * y, x))
         p = ' '
         r = random.randrange(0, len(g), 1)
         for n in g:
             if g[r] == n:
-                p += ' ' + '..'
+                p += '..' + ' '
             else:
-                p += ' ' + str(n)
+                p += str(n) + ' '
         print('Question:'+ p)
         b = prompt.integer('Your answer:')
         if a < 4 and g[r] == b:
