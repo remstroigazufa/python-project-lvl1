@@ -10,7 +10,7 @@ def main():
 
 def main_three():
     name = prompt.string('May I have your name? ')
-    print('Hello,', name, '!')
+    print('Hello,', name + '!')
     print('Answer "yes" if the number is even, otherwise answer "no"')
     a = 1
     while a < 4:
@@ -26,7 +26,7 @@ def main_three():
             print('Let\'s try again, {name}!')
             break
         if a == 4:
-            print('Congratulations,', name, '!')
+            print('Congratulations,', name + '!')
             break
 
 
