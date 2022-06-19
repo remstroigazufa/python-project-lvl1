@@ -7,7 +7,7 @@ import math
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello,', name, '!')
+    print('Hello,', name + '!')
     print('Find the greatest common divisor of given numbers.')
     a = 1
     while a < 4:
@@ -21,10 +21,10 @@ def main():
             a = a + 1
         else:
             print(b, 'is wrong answer ;(. Correct answer was', g, '.')
-            print('Let\'s try again,', name, "!")
+            print('Let\'s try again,', name + "!")
             break
         if a == 4:
-            print('Congratulations,', name, '!')
+            print('Congratulations,', name + '!')
             break
 
 
