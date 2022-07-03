@@ -8,7 +8,7 @@ STEP_NUMBER = 1
 def question():
     first_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP_NUMBER)
     second_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP_NUMBER)
-    action = ['+', '-', '*']
+    action = [' + ', ' - ', ' * ']
     operation = random.choice(action)
     expression = str(first_number) + str(operation) + str(second_number)
     answer = eval(f'first_number {operation} second_number')
