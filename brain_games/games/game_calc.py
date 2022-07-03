@@ -11,5 +11,5 @@ def question():
     action = ['+', '-', '*']
     operation = random.choice(action)
     expression = str(first_number) + str(operation) + str(second_number)
-    answer = eval(f'first_number, {operation}, second_number')
+    answer = eval(f'first_number {operation} second_number')
     return(str(expression), str(answer))
