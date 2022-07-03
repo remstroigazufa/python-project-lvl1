@@ -10,7 +10,7 @@ def progress(game):
     print(game.QUESTION)
     while a < 4:
         q, answer = game.question()
-        print('Question:' + q)
+        print('Question: ' + q)
         b = prompt.string('Your answer:')
         if a < 4 and answer == b:
             print('Correct!')
