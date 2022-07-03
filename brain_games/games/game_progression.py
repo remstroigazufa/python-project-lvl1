@@ -21,4 +21,5 @@ def question():
             empty_string += '..' + ' '
         else:
             empty_string += str(n) + ' '
-    return (str(empty_string), str(list_game[list_empty]))
+    empty_string_strip = empty_string.strip()
+    return (str(empty_string_strip), str(list_game[list_empty]))
