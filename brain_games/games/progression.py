@@ -1,5 +1,5 @@
 import random
-task_game = 'What number is missing in the progression?'
+TASK_GAME = 'What number is missing in the progression?'
 MIN_NUMBER_START = 1
 MIN_NUMBER_STOP = 6
 MIN_NUMBER_STEP = 2

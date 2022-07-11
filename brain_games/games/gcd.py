@@ -1,6 +1,6 @@
 import random
 import math
-task_game = 'Find the greatest common divisor of given numbers.'
+TASK_GAME = 'Find the greatest common divisor of given numbers.'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 STEP_NUMBER = 1

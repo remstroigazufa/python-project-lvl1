@@ -1,24 +1,22 @@
 '#!/usr/bin/env python3'
 import prompt
+ROUND_COUNT = 3
 
-
-def unites(game):
-    a = 1
+def run_game(game):
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?')
-    print('Hello, ', name + '!')
-    print(game.task_game)
-    while a < 4:
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    print(game.TASK_GAME)
+    for round in range(0, ROUND_COUNT):
         question_game, answer = game.decides()
-        print('Question: ' + question_game)
-        b = prompt.string('Your answer:')
-        if a < 4 and answer == b:
+        print(f'Question: {question_game}')
+        b = prompt.string('Your answer: ')
+        if round < ROUND_COUNT and answer == b:
             print('Correct!')
-            a = a + 1
         else:
-            print(b, 'is wrong answer ;(. Correct answer was ', answer, '.')
-            print('Let\'s try again,', name + "!")
+            print(f'{b}, is wrong answer ;(. Correct answer was , {answer}.')
+            print(f'Let\'s try again, {name}!')
             break
-        if a == 4:
-            print('Congratulations,', name + '!')
+        if round == (ROUND_COUNT - 1):
+            print(f'Congratulations, {name}!')
             break

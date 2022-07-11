@@ -1,5 +1,5 @@
 import random
-task_game = 'Answer "yes" if the number is even,'\
+TASK_GAME = 'Answer "yes" if the number is even,'\
     ' otherwise answer "no".'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
