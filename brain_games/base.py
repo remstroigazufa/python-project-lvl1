@@ -2,15 +2,15 @@
 import prompt
 
 
-def progress(game):
+def unites(game):
     a = 1
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name?')
     print('Hello, ', name + '!')
-    print(game.QUESTION)
+    print(game.task_game)
     while a < 4:
-        q, answer = game.question()
-        print('Question: ' + q)
+        question_game, answer = game.decides()
+        print('Question: ' + question_game)
         b = prompt.string('Your answer:')
         if a < 4 and answer == b:
             print('Correct!')

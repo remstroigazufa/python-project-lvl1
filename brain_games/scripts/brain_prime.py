@@ -1,10 +1,10 @@
 '#!/usr/bin/env python3'
-import brain_games.games.game_prime
-from brain_games.games.game_base import progress
+import brain_games.games.prime
+from brain_games.base import unites
 
 
 def main():
-    progress(brain_games.games.game_prime)
+    unites(brain_games.games.prime)
 
 
 if __name__ == '__main__':

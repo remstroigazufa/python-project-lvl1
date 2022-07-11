@@ -1,12 +1,12 @@
 import random
 import math
-QUESTION = 'Find the greatest common divisor of given numbers.'
+task_game = 'Find the greatest common divisor of given numbers.'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 STEP_NUMBER = 1
 
 
-def question():
+def decides():
     first_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP_NUMBER)
     second_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP_NUMBER)
     expression = str(first_number) + ' ' + str(second_number)
