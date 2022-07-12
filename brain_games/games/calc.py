@@ -8,9 +8,9 @@ STEP = 1
 def decides():
     first_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP)
     second_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP)
-    action = [' + ', ' - ', ' * ']
+    action = ['+', '-', '*']
     operation = random.choice(action)
-    expression = str(first_number) + str(operation) + str(second_number)
+    expression = str(first_number) + ' ' + str(operation) + ' ' + str(second_number)
     if operation == '+':
         answer = first_number + second_number
     elif operation == '-':
