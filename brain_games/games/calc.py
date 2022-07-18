@@ -10,7 +10,7 @@ def decides():
     second_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP)
     action = ['+', '-', '*']
     operation = random.choice(action)
-    expression = str(first_number) + ' ' + str(operation) + ' ' + str(second_number)
+    expression = f'{first_number} {operation} {second_number}'
     if operation == '+':
         answer = first_number + second_number
     elif operation == '-':
