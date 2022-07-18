@@ -18,4 +18,4 @@ def is_prime(k):
 def get_game_data():
     number_game = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP_NUMBER)
     correct_answer = 'yes' if is_prime(number_game) is True else 'no'
-    return(str(number_game), str(correct_answer))
+    return (str(number_game), str(correct_answer))

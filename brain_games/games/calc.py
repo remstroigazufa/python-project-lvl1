@@ -17,4 +17,4 @@ def get_game_data():
         answer = first_number - second_number
     elif operation == '*':
         answer = first_number * second_number
-    return(str(expression), str(answer))
+    return (str(expression), str(answer))

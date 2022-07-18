@@ -9,10 +9,10 @@ def run_game(game):
     print(f'Hello, {name}!')
     print(game.TASK_GAME)
     for round in range(0, ROUND_COUNT):
-        question_game, answer = game.decides()
+        question_game, answer = game.get_game_data()
         print(f'Question: {question_game}')
         b = prompt.string('Your answer: ')
-        if round < ROUND_COUNT and answer == b:
+        if answer == b:
             print('Correct!')
         else:
             print(f'{b}, is wrong answer ;(. Correct answer was , {answer}.')

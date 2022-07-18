@@ -11,4 +11,4 @@ def get_game_data():
     second_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP_NUMBER)
     expression = f'{first_number} {second_number}'
     answer = math.gcd(first_number, second_number)
-    return(str(expression), str(answer))
+    return (str(expression), str(answer))
