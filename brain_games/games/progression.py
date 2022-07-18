@@ -9,7 +9,7 @@ STEP = 1
 MIN_NUMBER_LIST = 0
 
 
-def decides():
+def get_game_data():
     start_int = random.randrange(MIN_NUMBER_START, MAX_NUMBER_START, STEP)
     stop_int = random.randrange(MIN_NUMBER_STOP, MAX_NUMBER_STOP, STEP)
     step_int = random.randrange(MIN_NUMBER_STEP, MAX_NUMBER_START, STEP)

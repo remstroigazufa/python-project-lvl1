@@ -6,7 +6,7 @@ MAX_NUMBER = 100
 STEP_NUMBER = 1
 
 
-def decides():
+def get_game_data():
     number_game = random.randrange(
         MIN_NUMBER, MAX_NUMBER, STEP_NUMBER)
     correct_answer = \

@@ -5,7 +5,7 @@ MAX_NUMBER = 100
 STEP = 1
 
 
-def decides():
+def get_game_data():
     first_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP)
     second_number = random.randrange(MIN_NUMBER, MAX_NUMBER, STEP)
     action = ['+', '-', '*']
