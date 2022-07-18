@@ -14,7 +14,7 @@ package-install:
 	python3 -m pip install --user dist/*.whl  --force-reinstall
 
 lint:
-	poetry run flake8  brain_games
+	poetry run flake8 brain_games
 
 
 .PHONY: brain-games
