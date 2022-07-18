@@ -1,4 +1,5 @@
-'#!/usr/bin/env python3'
+#!/usr/bin/env python3
+
 import brain_games.games.prime
 from brain_games.base import run_game
 
